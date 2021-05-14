@@ -10,8 +10,8 @@ import {obtenerDolares,EliminarCliente} from './API.js';
     function confirmarEliminar(e){
         if(e.target.classList.contains('eliminar')){
             const dolarId = parseInt(e.target.dataset.dolar);
-            console.log(dolarId);
-            const confirmar = confirm("¿Deseas Elimiar Este Registro?");
+          
+           const confirmar = confirm("¿Deseas Elimiar Este Registro?");
             if(confirmar){
                 EliminarCliente(dolarId);
             }
@@ -64,7 +64,7 @@ import {obtenerDolares,EliminarCliente} from './API.js';
                 <a href="editar-dolar.html?id=${id}/?banco=${banco}" class=" inline-block px-6 py-4 rounded-full shadow-sm font-medium transition duration-200 ease-in-out transform hover:scale-105 bg-green-600 hover:bg-green-200 text-gray-100 hover:text-blue-600 mr-5"> Editar </a>
             </td>
             <td class="px-2 py-1 whitespace-no-wrap border-b border-gray-200 text-sm leading-5">
-                <a href="index.html" data-dolar="${id}" class="text-gray-100 hover:text-red-600 eliminar inline-block px-6 py-4 rounded-full shadow-sm font-medium transition duration-200 ease-in-out transform hover:scale-105 bg-red-600 hover:bg-red-200 mr-5">Eliminar</a>
+                <a href="#" data-dolar="${id}" class="text-gray-100 hover:text-red-600 eliminar inline-block px-6 py-4 rounded-full shadow-sm font-medium transition duration-200 ease-in-out transform hover:scale-105 bg-red-600 hover:bg-red-200 mr-5">Eliminar</a>
             </td>
             `
             listado.appendChild(row);
