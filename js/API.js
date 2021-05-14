@@ -1,5 +1,5 @@
-const url = 'http://backinterbancaria.azurewebsites.net/api/dlls';
-const urlBancos = 'http://backinterbancaria.azurewebsites.net/api/banco';
+const url = 'https://backinterbancaria.azurewebsites.net/api/dlls';
+const urlBancos = 'https://backinterbancaria.azurewebsites.net/api/banco';
 
 //Crea Nuevo Dolar
 
