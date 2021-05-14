@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolar | nuevo</title>
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/position.css">
+</head>
+<body class="min-h-100 bg-gray-200">
+    <div class="md:flex min-h-screen md:align-top">
+        <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-teal-600 px-5 py-10">
+            <h1 class="uppercase text-white tracking-wide text-2xl  font-bold mt-2">AppInterbacaria</h1>
+            <p class="mt-10 text-white">Consulta el Precio del Dolar</p>
+            <nav class="mt-8">
+                <a  
+                    href="index.html" 
+                    class="px-3 py-1 text-white block hover:bg-teal-700 hover:text-yellow-400 "
+                >Dolares</a>
+                <a 
+                    href="nuevo-dolar.html" 
+                    class="px-3 py-1 text-white block hover:bg-teal-900 mt-2 hover:text-yellow-400 bg-teal-700"
+                >Agregar Dolar</a>
+                <a 
+                href="nuevo-banco.html" 
+                class="px-3 py-1 text-white block hover:bg-teal-900 mt-2 hover:text-yellow-400"
+            >Agregar Banco</a>
+            <a 
+            href="nuevo-tipo-dolar.html" 
+            class="px-3 py-1 text-white block hover:bg-teal-900 mt-2 hover:text-yellow-400"
+        >Agregar Tipo de Dolar</a>
+            </nav>
+        </aside> <!--sidebar-->
+        <main class="md:w-3/5  xl:w-4/5 px-5 py-10 bg-gray-200">
+            <h2 class="text-3xl font-light text-center">Agregar Dolar</h2>
+
+            <div class="flex flex-col mt-10 items-center">
+                <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 w-10/12 md:w-8/12 lg:w-6/12">
+                    <div class=" shadow overflow-hidden sm:rounded-lg border-b border-gray-200 ">
+                        <form id="formulario" class="bg-white p-3" method="POST">
+                            <div class="mb-4 left">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="Banco">Banco</label>
+                               <!-- <input 
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="banco"
+                                    name="banco"
+                                    type="text"
+                                    placeholder="Nombre Banco"
+                                />-->
+                                <select
+                                class="appearance-none border rounded w-full py-2 px-12 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="banco"
+                                name="banco"
+                                >
+                                    <option value="">Elige el Banco</option>
+
+                                </select>
+                            </div>
+                            <div class="mb-4 right">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="tipoDolar">Tipo Dolar</label>
+                                <input 
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="tipoDolar"
+                                    name="tipoDolar"
+                                    type="text"
+                                    placeholder="tipo de Dolar"
+                                />
+                            </div>
+
+                            <div class="mb-4 left">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="compra">Compra</label>
+                                <input 
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="compra"
+                                    name="compra"
+                                    type="text"
+                                    placeholder="Precio de Compra"
+                                />
+                            </div>
+
+                            <div class="mb-4 right">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="venta">Venta</label>
+                                <input 
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="venta"
+                                    name="venta"
+                                    type="text"
+                                    placeholder="Precio de Venta"
+                                />
+                            </div>
+
+                            <div class="mb-4 left">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="compra24">Compra 24 hrs</label>
+                                <input 
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="compra24"
+                                    name="compra24"
+                                    type="text"
+                                    placeholder="Precio Compra hace 24hrs"
+                                />
+                            </div>
+
+                            <div class="mb-4 right">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="venta24">Venta 24 hrs</label>
+                                <input 
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="venta24"
+                                    name="venta24"
+                                    type="text"
+                                    placeholder="Precio Venta hace 24hrs"
+                                />
+                            </div>
+
+                            <div class="mb-4 left">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="compra48">Compra 48 hrs</label>
+                                <input 
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="compra48"
+                                    name="compra48"
+                                    type="text"
+                                    placeholder="Precio Compra hace 48hrs"
+                                />
+                            </div>
+
+                            <div class="mb-4 right">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="venta48">Venta 48 hrs</label>
+                                <input 
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="venta48"
+                                    name="venta48"
+                                    type="text"
+                                    placeholder="Precio Venta hace 48hrs"
+                                />
+                            </div>
+                            <input
+                                type="submit"
+                                class="bg-teal-600 hover:bg-teal-900 w-full mt-5 p-2 text-white uppercase font-bold"
+                                value="Agregar Dolar"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    
+    <script src="js/nuevoDolar.js" type="module"></script>
+</body>
+</html>
